@@ -1,0 +1,29 @@
+$(document).ready(function(){
+	$(".slide_banner").slick({
+		infinite:true,
+		autoplay:true,
+		dots:true,
+		arrows:false
+	});
+
+	$(".ctl-slide > ul").slick({
+		infinite:true,
+		autoplay:true,
+		dots:true,
+		arrows:false,
+		slidesToShow:4,
+		slidesToScroll:4,
+		responsive:[{
+			breakpoint:992,
+			settings:{
+				slidesToShow:3,
+				slidesToScroll:3
+			}},{
+			breakpoint:768,
+			settings:{
+				slidesToShow:2,
+				slidesToScroll:2
+			}}],
+		appendDots:$(".ctl-dots")
+	});
+});

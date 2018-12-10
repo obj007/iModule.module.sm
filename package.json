@@ -1,0 +1,43 @@
+{
+	"id":"kr.ac.sm",
+	"icon":"xi-plug",
+	"title":{
+		"ko":"숙명여대 연동모듈"
+	},
+	"version":"3.0.0",
+	"description":{
+		"ko":"숙명여대 시스템 연동 API를 관리합니다."
+	},
+	"author":{
+		"name":"Arzz",
+		"email":"arzz@arzz.com"
+	},
+	"homepage":"http://www.coursemos.kr",
+	"dependencies":{
+		"core":"3.0.0",
+		"member":"3.0.0"
+	},
+	"language":"ko",
+	"templet":true,
+	"configs":{
+		"haksa":{
+			"type":"string",
+			"value":""
+		}
+	},
+	"targets":{
+		"ems":{
+			"afterGetContext":[
+				"login"
+			]
+		},
+		"coursemos":{
+			"afterDoProcess":[
+				"@sync"
+			]
+		}
+	},
+	"databases":{
+
+	}
+}

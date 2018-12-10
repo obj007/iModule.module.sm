@@ -1,0 +1,19 @@
+
+.gray_box.clinic01 {padding:25px 0}
+.gray_box.barun01 {padding:40px 0}
+
+.num_tit {display:block; margin-bottom:15px; padding-left:10px; font-size:14px; font-weight:normal; color:#222}
+.num_tit > i {display:inline-block; width:16px; height:16px; margin-right:5px; border-radius:50%; font-style:normal; line-height:16px; text-align:center; font-size:11px; color:#fff; vertical-align:middle; background-color:#6385a8}
+
+.cnt_wrap > .txt {font-size:14px; color:#666}
+
+.gray_border_box {margin:10px 0 35px; padding:25px 20px; border:10px solid #ededf0}
+.gray_border_box > strong.tit {font-size:16px; color:#2256a7}
+.gray_border_box > em.dot {display:block; position:relative; padding-left:10px; color:#333; font-size:14px; font-weight:bold; font-style:normal}
+.gray_border_box > em.dot:after {content:''; display:block; position:absolute; left:0; top:9px; width:3px; height:3px; background:#203353}
+
+.gray_border_box .arr_txt {display:inline-block; position:relative; width:315px; padding-left:15px; margin:5px 0; font-size:14px;}
+.gray_border_box .arr_txt:after {content:'\f0da'; width:11px; height:11px; position:absolute; left:0; top:2px; display: inline-block; font-family: FontAwesome; font-style: normal; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color:#3886cc; font-size:11px}
+
+
+main.subpage > div.container > div.context .table_box.contest table td {text-align:left; vertical-align:top}

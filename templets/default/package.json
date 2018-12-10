@@ -1,0 +1,21 @@
+{
+	"title":{
+		"ko":"경기대학교 기본 템플릿"
+	},
+	"version":"3.0.0",
+	"author":{
+		"name":"Arzz",
+		"email":"arzz@arzz.com"
+	},
+	"homepage":"http://www.kyonggi.ac.kr",
+	"language":"ko",
+	"configs":{
+		
+	},
+	"styles":[
+		"/styles/style.css"
+	],
+	"scripts":[
+		"/scripts/script.js"
+	]
+}

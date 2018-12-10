@@ -1,0 +1,55 @@
+div[data-widget=coursemos-sidebar][data-templet=default] aside {position:fixed; top:0; right:0; width:300px; height:100%; background:#fff; z-index:20000; display:none;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > div.header {height:60px; line-height:60px; padding-left:20px; font-size:14px; font-weight:bold; color:#fff;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > div.header > div.photo {margin:10px 0px; width:40px; height:40px; border:1px solid #ccc; background-repeat:no-repeat; background-size:cover; background-position:50% 50%; box-sizing:border-box; float:left; margin-right:10px; border-radius:50%;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > div.header > button.logout {color:#fff; font-size:12px; height:28px; line-height:28px; padding:0px 10px; cursor:pointer; border:0px; vertical-align:middle; margin-left:10px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > div.header > button.close {float:right; width:60px; height:60px; cursor:pointer; background:transparent; border:0;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > div.header > button.close > i {width:60px; height:60px; line-height:60px; text-align:center; font-size:30px;}
+
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] div[data-role=input] {margin:0px; min-height:0px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] div[data-role=input] > input {box-sizing:border-box; border:1px solid #c2c2c2; border-right:0px; width:100%; height:32px; padding:5px; line-height:20px; border-radius:0; font-size:12px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] div[data-role=input] > input[type=password] {height:31px; border-top:0px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] div[data-role=help] {display:none;}
+
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login].login {box-sizing:border-box; position:relative; font-size:12px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login].login .paddingBox {padding:15px; border-top:1px solid #e0e0e0; background:#f7f7f7;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .errorBox {display:none; position:absolute; top:100%; left:10px; width:calc(100% - 20px); background:#c20000; line-height:25px; padding:5px 10px; line-height:1.6; font-size:12px; color:#ffff7f; margin-top:0px !important; box-sizing:border-box; z-index:10;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .errorBox:after {bottom:100%; left:20px; border:solid 0px transparent; content:" "; height:0; width:0; position:absolute; border-bottom-color:#c20000; border-width:5px; margin-top:-5px;}
+
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .help {height:16px; padding-bottom:15px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .help > button {display:inline-block; height:18px; line-height:19px; text-decoration:none; color:#808080; font-size:12px; vertical-align:top; background:transparent; border:0px; cursor:pointer; padding-right:23px; background:url(../images/icon_help.png) no-repeat 100% 0;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .helpBox {position:absolute; top:47px; left:15px; z-index:1; width:calc(100% - 30px); display:none;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .helpBox > div {position:relative; background:#fff; border:1px solid #919599; padding:12px; height:37px; line-height:18px; color:#666; cursor:pointer;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .helpBox > div:after, div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .helpBox > div:before {bottom:100%; left:68px; border:solid transparent; content:" "; height:0; width:0; position:absolute; pointer-events:none;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .helpBox > div:after {border-color:rgba(255, 255, 255, 0); border-bottom-color:#fff; border-width:8px; margin-left:-8px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .helpBox > div:before {border-color:rgba(145, 149, 153, 0); border-bottom-color:#919599; border-width:9px; margin-left:-9px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .loginForm:after {content:" "; clear:both; display:block; padding-bottom:15px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .loginForm > .input {float:left; width:calc(100% - 65px);} /* 144px */
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .loginForm > button {border:1px solid #c2c2c2; width:65px; height:63px; float:left; cursor:pointer; background:#fff; color:#333;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] .loginForm > a {float:right; width:73px; height:63px; border:1px solid #8ab4db; display:block; color:#1c9ac0; text-align:center; text-decoration:none; font-size:12px; box-sizing:border-box; padding-top:13px; line-height:1.6; background:#fbfbfb;}
+
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] div.link {color:#d5d7d8;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] div.link > a {font-size:12px; text-decoration:none; color:#808080; vertical-align:middle;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] div.link > button {font-size:12px; display:inline-block; background:transparent; padding:0; margin:0; border:0; vertical-align:middle; color:#808080; cursor:pointer;}
+
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] ul.buttons {display:table; width:100%; border:0px; table-layout:fixed; list-style:none; border-top:1px solid #e0e0e0;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] ul.buttons > li {display:table-cell; height:72px; border-left:1px solid #e0e0e0; background:#f7f7f7; position:relative; font-size:0px; vertical-align:top;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] ul.buttons > li > a {display:block; text-decoration:none; box-sizing:border-box; width:100%; height:72px; cursor:pointer; color:#626a73; text-align:center; font-size:12px; font-weight:bold;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] ul.buttons > li > a > i {display:block !important; color:#c3cad0; text-align:center; width:100%; height:48px; line-height:48px; font-size:24px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] ul.buttons > li > a > i.xi {line-height:50px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] ul.buttons > li:first-child {border-left:0px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] ul.buttons > li > span[data-role=badge] {display:inline-block; position:absolute; top:8px; right:12px; font-size:11px; font-family:OpenSans; height:18px; line-height:18px; padding:0px 5px; min-width:18px; box-sizing:border-box; text-align:center; border-radius:9px; color:#fff; font-weight:bold;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside section[data-role=login] ul.buttons > li > span[data-role=badge]:empty {display:none;}
+
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu {width:100%; border-top:1px solid #e0e0e0; list-style:none; overflow-x:hidden; overflow-y:auto; -webkit-overflow-scrolling:touch; box-sizing:border-box;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu.login {height:calc(100% - 214px);}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu.logged {height:calc(100% - 133px);}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li {height:50px; overflow:hidden;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li > a {display:block; width:100%; height:50px; line-height:50px; font-size:14px; padding:0px 20px; text-decoration:none; border:0; background:#fff; color:#333; box-sizing:border-box; border-bottom:1px solid #e0e0e0; text-align:left; cursor:pointer;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li > a > i.icon {float:left; width:30px; height:50px; line-height:50px; font-size:20px; color:#666;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li > a > i[data-role=toggle] {float:right; width:50px; height:50px; line-height:50px; text-align:center; font-size:20px; color:#666; margin-right:0px; cursor:pointer; margin-right:-20px; transform:rotate(0deg);}
+
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li > div.submenu {background:#f7f7f7; padding:10px 0px; border-bottom:1px solid #e0e0e0;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li > div.submenu > a {display:block; width:100%; height:36px; line-height:36px; padding:0px 20px; box-sizing:border-box; text-decoration:none; color:#000; font-size:13px;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li > div.submenu > a.selected {font-weight:bold;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li.opened {height:auto;}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li.opened > a > i[data-role=toggle] {transform:rotate(180deg);}

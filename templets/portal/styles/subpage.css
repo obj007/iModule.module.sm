@@ -1,0 +1,245 @@
+/**
+* 이 파일은 경기대 연동모듈의 일부입니다. (https://www.imodule.kr)
+*
+* 경기대 포털 스타일시트
+*
+* @file /templets/kgu/styles/subpage.css
+* @author Arzz (arzz@arzz.com)
+* @license MIT License
+* @version 3.0.0.160910
+*/
+
+main.subpage > div.intro {display:block; width:100%; height:126px; text-align:center; background-repeat:no-repeat; background-position:center top; background-size:cover;}
+/* main.subpage > div.intro p {padding-top:80px; font-size:36px; font-weight:600; color:#fff;} */
+main.subpage > div.intro p {font-size:0; line-height:0; visibility:hidden}
+
+div.nbreadcrumb {display:block; height:37px; font-size:0;}
+div.nbreadcrumb:after {content:''; display:block; clear:both}
+div.nbreadcrumb > a {float:left; width:47px; height:37px; line-height:37px; color:#acadad; text-decoration:none; font-size:14px; vertical-align:top; text-align:center;}
+div.nbreadcrumb > div[data-role=input] {float:left; width:100px; height:37px; line-height:37px; font-size:14px; vertical-align:top; margin:0px 0px 0px -1px !important; color:#999;}
+div.nbreadcrumb > div[data-role=input]:after {content:''; display:block; position:absolute; left:0; top:50%; margin-top:-7px; width:1px; height:13px; background:#e4e4e4}
+div.nbreadcrumb > div[data-role=input] > span {display:inline-block; width:100%; line-height:37px; text-align:center}
+div.nbreadcrumb > div[data-role=input] > button {background:transparent; height:37px; line-height:37px; border:0 none; color:#000}
+div.nbreadcrumb > div[data-role=input] > button span {padding:0px 10px 0px 20px;}
+div.nbreadcrumb > div[data-role=input] > ul {top:37px;}
+div.nbreadcrumb > div[data-role=input].extend + div[data-role=input] > button {border-left-color:#66afe9;}
+div.nbreadcrumb > div[data-role=input][data-name=page] {width:150px;}
+div.nbreadcrumb > div[data-role=input][data-type=select] > ul > li {padding:0px 10px 0px 20px; overflow:hidden;}
+
+
+main.subpage > div.container > div.context {display:table; width:100%; table-layout:fixed; margin-top:55px;}
+main.subpage > div.container > div.context > nav {display:table-cell; width:220px; vertical-align:top; padding-bottom:20px; border-top:2px solid #254a94}
+main.subpage > div.container > div.context > nav > h2 {width:100%; height:80px; margin-bottom:10px; color:#fff; line-height:80px; font-size:24px; font-weight:normal; text-align:center; background:#2256a7 url(/modules/kgu/templets/portal/images/bg_sub_tit.png) no-repeat right top;}
+
+main.subpage > div.container > div.context > nav > ul {border:1px solid #dcddde; list-style:none;}
+main.subpage > div.container > div.context > nav > ul > li {border-top:1px solid #e6e6e6; background-color:#f7f9fc;}
+main.subpage > div.container > div.context > nav > ul > li:first-child {border:0 none}
+main.subpage > div.container > div.context > nav > ul > li > a {display:block; width:100%; line-height:24px; padding:16px 15px 16px 20px; box-sizing:border-box; text-decoration:none; color:#333; font-size:16px;}
+main.subpage > div.container > div.context > nav > ul > li:hover {background:#edeff0;}
+main.subpage > div.container > div.context > nav > ul > li:hover > a {color:#203353;}
+main.subpage > div.container > div.context > nav > ul > li.selected > a {background:#203353; color:#fff}
+
+main.subpage > div.container > div.context > nav > ul > li.group {background:#fff}
+main.subpage > div.container > div.context > nav > ul > li.group > button {display:block; width:100%; line-height:24px; padding:13px 15px; box-sizing:border-box; text-decoration:none; color:#666; font-size:14px; text-align:left; background:transparent; border:0; cursor:pointer;}
+main.subpage > div.container > div.context > nav > ul > li.group > button:hover {background:#edeff0; color:#238bd7;}
+main.subpage > div.container > div.context > nav > ul > li.group > button > i {float:right; font-size:14px;}
+main.subpage > div.container > div.context > nav > ul > li.group.opened > button {background:#f0f0f0; color:#238bd7;}
+main.subpage > div.container > div.context > nav > ul > li.group.opened > button > i:before {content:"\f106";}
+main.subpage > div.container > div.context > nav > ul > li.group.selected > button {background:#2256a7; color:#fff;}
+
+main.subpage > div.container > div.context > nav > ul > li.group > ul {background:#fafafa; list-style:none; display:none;}
+main.subpage > div.container > div.context > nav > ul > li.group.opened > ul {display:block;}
+main.subpage > div.container > div.context > nav > ul > li.group > ul > li {border-bottom:1px solid #ebebeb}
+main.subpage > div.container > div.context > nav > ul > li.group > ul > li > a {display:block; height:40px; line-height:40px; font-size:13px; padding:0px 15px; box-sizing:border-box; letter-spacing:-1px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; color:#666; text-decoration:none;}
+main.subpage > div.container > div.context > nav > ul > li.group > ul > li:last-child {border-bottom:0 none}
+main.subpage > div.container > div.context > nav > ul > li.group > ul > li.selected > a {color:#2256a7}
+
+
+main.subpage > div.container > div.context > section {display:table-cell; width:100%; padding:0px 0px 20px 60px;}
+main.subpage > div.container > div.context > section > h3 {display:block; height:80px; line-height:70px; font-size:32px; margin-bottom:40px; background:url(/modules/kgu/templets/portal/images/bg_line.png) repeat-x left bottom;}
+main.subpage > div.container > div.context > section > h3:after {content:''; display:block; clear:both}
+main.subpage > div.container > div.context > section > h3 > .nbreadcrumb {float:right; margin-top:30px}
+
+main.subpage > div.container > div.context > section > h3 > ul.menus {float:right; list-style:none; height:35px; font-size:0; white-space:nowrap; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; box-sizing:border-box;}
+main.subpage > div.container > div.context > section > h3 > ul.menus > li {display:inline-block; height:35px; line-height:35px; font-size:14px}
+main.subpage > div.container > div.context > section > h3 > ul.menus > li > a {display:inline-block; position:relative; color:#545255; text-decoration:none}
+main.subpage > div.container > div.context > section > h3 > ul.menus > li > a + a:after {content:''; display:block; position:absolute; left:-5px; top:50%; width:1px; height:15px; transform:translateY(-50%); background-color:#e9e7ea}
+main.subpage > div.container > div.context > section > h3 > ul.menus > li.sns {float:right}
+main.subpage > div.container > div.context > section > h3 > ul.menus > li.sns > a {display:inline-block; padding:0px 15px; margin-left:5px; font-size:18px}
+
+
+div[data-role=tabbar] > div > ul > li {position:relative; border-top:1px solid #e6e6e6; border-bottom:2px solid #203353; background-color:#fafafa}
+div[data-role=tabbar] > div > ul > li.selected {background:#fff; border-bottom:2px solid transparent}
+div[data-role=tabbar] > div > ul > li.selected > button, div[data-role=tabbar] > div > ul > li.selected > a {border-left:2px solid #203353; border-right:2px solid #203353; color:#000; background:none}
+div[data-role=tabbar] > div > ul > li:last-child > button, div[data-role=tabbar] > div > ul > li:last-child > a {border-right:1px solid #e6e6e6}
+div[data-role=tabbar] > div > ul > li:last-child.selected > button, div[data-role=tabbar] > div > ul > li:last-child.selected > a {border-right:2px solid #203353}
+div[data-role=tabbar] > div > ul > li > button, div[data-role=tabbar] > div > ul > li > a {font-size:16px; color:#999}
+
+/* 서브페이지 공통 */
+main.subpage > div.container > div.context > section h4.sub_tit {position:relative; margin:40px 0 25px; font-size:24px; color:#005aab}
+main.subpage > div.container > div.context > section h4.sub_tit.tit_small {margin-bottom:20px}
+main.subpage > div.container > div.context > section h5.sub_min_tit {position:relative; margin-bottom:30px; padding-left:20px; padding-bottom:0; font-weight:normal; font-size:18px; font-weight:bold; color:#000}
+main.subpage > div.container > div.context > section h5.sub_min_tit:after {content:''; display:block; position:absolute; top:3px; left:0; width:12px; height:12px; background:#3886cc}
+main.subpage > div.container > div.context > section h6 {position:relative; margin-bottom:15px; padding-left:25px; font-weight:normal; font-size:16px; font-weight:bold; line-height:20px; color:#222; background:url(/modules/kgu/templets/portal/images/ico_title_h6.png) no-repeat left 2px}
+main.subpage > div.container > div.context > section h6.link {background-position:left 7px}
+main.subpage > div.container > div.context > section h6 > a {display:inline-block; width:80px; height:30px; margin-left:15px; border:1px solid #0067b3; border-radius:3px; font-size:14px; font-weight:normal; color:#0067b3; vertical-align:middle; line-height:30px; text-align:center;}
+main.subpage > div.container > div.context > section h6 > a > i {font-size:12px; vertical-align:middle}
+main.subpage > div.container > div.context > section .dot_type + h6 {margin-top:20px}
+main.subpage > div.container > div.context > section > .sub_cnt {padding-top:50px; border-top:1px solid #ccc}
+
+main.subpage > div.container > div.context > section .cnt_wrap {margin-bottom:50px; line-height:1.6; color:#666}
+main.subpage > div.container > div.context > section .cnt_wrap > p {word-break:keep-all}
+main.subpage > div.container > div.context > section .cnt_wrap > .cap {position:relative; padding-left:35px}
+main.subpage > div.container > div.context > section .cnt_wrap > .cap > b {position:absolute; left:0; top:0; font-weight:normal}
+main.subpage > div.container > div.context > section .gray_box {text-align:center; background:#f7f7f7}
+main.subpage > div.container > div.context > section .gray_box > img {max-width:100%}
+
+main.subpage > div.container > div.context > section .bg_box {margin-bottom:45px; padding:30px 20px 30px 40px; background:#d6eeff url(/modules/kgu/templets/portal/images/bg_box.png) no-repeat right center; background-size:auto 100%}
+main.subpage > div.container > div.context > section .bg_box > img {max-width:100%}
+main.subpage > div.container > div.context > section .bg_box.txt {padding:30px}
+main.subpage > div.container > div.context > section .bg_box.txt > p {font-size:16px; line-height:1.6; word-break:keep-all}
+
+main.subpage > div.container > div.context > section .btn_bg_box {margin:50px 0; padding:20px 0; border:1px solid #d8e6f0; background:#e5f4ff url(/modules/kgu/templets/portal/images/bg_btn_box.png) no-repeat center right; background-size:auto 100%; text-align:center}
+main.subpage > div.container > div.context > section .btn_bg_box > a {display:inline-block; padding:0 10px; min-width:140px; height:48px; border-radius:3px; line-height:48px; font-size:16px; color:#fff; background:#0067b3}
+main.subpage > div.container > div.context > section .btn_bg_box > a:hover {text-decoration:none}
+main.subpage > div.container > div.context > section .btn_bg_box + .hr {margin-top:100px}
+
+main.subpage > div.container > div.context > section .img_wrap {text-align:center}
+main.subpage > div.container > div.context > section .img_wrap img {vertical-align:top; max-width:100%; margin-bottom:30px}
+main.subpage > div.container > div.context > section .table_box {overflow:hidden; overflow-x:auto; margin-bottom:10px}
+main.subpage > div.container > div.context > section .table_box:after {content:''; display:block; clear:both}
+main.subpage > div.container > div.context > section .table_box table {float:left; overflow:hidden; min-width:600px; width:100%; border-collapse:collapse}
+main.subpage > div.container > div.context > section .table_box table th,
+main.subpage > div.container > div.context > section .table_box table td {height:27px; padding:10px 15px; border:1px solid #e5e5e5; text-align:center; vertical-align:middle; word-break:keep-all}
+main.subpage > div.container > div.context > section .table_box table th {border-top:1px solid #203353; color:#333; background:#f7f7f9; font-size:14px}
+main.subpage > div.container > div.context > section .table_box table td {font-size:14px; color:#666}
+main.subpage > div.container > div.context > section .table_box table td.a_l {text-align:left}
+main.subpage > div.container > div.context > section .table_box table th:first-child,
+main.subpage > div.container > div.context > section .table_box table td:first-child {border-left:0 none}
+main.subpage > div.container > div.context > section .table_box table th:last-child,
+main.subpage > div.container > div.context > section .table_box table td:last-child {border-right:0 none}
+main.subpage > div.container > div.context > section .table_box table td > .dot_inner > .bar:first-child {margin-top:0}
+
+main.subpage > div.container > div.context > section p.dot_type {position:relative; padding-left:10px; font-size:14px; color:#666; word-break:keep-all; text-align:left}
+main.subpage > div.container > div.context > section p.dot_type:after {content:''; display:block; width:4px; height:4px; background:#3886cc; position:absolute; top:8px; left:0}
+main.subpage > div.container > div.context > section p.dot_type > b {color:#222; line-height:20px}
+main.subpage > div.container > div.context > section p.dot_inner > span {display:block; position:relative; font-size:14px; color:#666; margin-top:7px}
+main.subpage > div.container > div.context > section p.dot_inner > span.bar {padding-left:10px}
+main.subpage > div.container > div.context > section p.dot_inner > span.bar:after {content:''; display:block; position:absolute; left:0; top:10px; width:5px; height:1px; background:#666}
+
+main.subpage > div.container > div.context > section .a_l {text-align:left}
+main.subpage > div.container > div.context > section p.dot_type > .beige {display:inline; line-height:20px}
+
+main.subpage > div.container > div.context > section .page_poll {margin:120px 0 60px; border:1px solid #d6d6d6}
+main.subpage > div.container > div.context > section .page_poll > .poll_box {position:relative; padding:25px; background:url(/modules/kgu/templets/portal/images/bg_line.png) repeat-x left top}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > strong {display:block; margin-bottom:25px; font-size:16px; font-weight:normal; color:#333; word-break:keep-all}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .radio_wrap {padding-right:240px}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .radio_wrap > label {margin-top:-10px}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .radio_wrap > label > input[type=radio] {display:none}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .radio_wrap > label > input[type=radio] + span {display:inline-block; position:relative; margin-top:10px; margin-right:35px; padding-left:25px; font-size:14px; color:#666; cursor:pointer}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .radio_wrap > label > input[type=radio] + span:after {content:''; display:block; position:absolute; left:0; top:0; box-sizing:border-box; width:15px; height:15px; border:3px solid #fff; border-radius:50%; background:#fff; box-shadow:0 0 1px 1px #ccc}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .radio_wrap > label > input[type=radio]:checked + span:after {background:#f7941e}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .poll_btn {position:absolute; right:20px; bottom:15px}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .poll_btn > button {width:80px; height:34px; border-radius:5px; font-size:14px; color:#fff}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .poll_btn > button.eval {background:#2256a7}
+main.subpage > div.container > div.context > section .page_poll > .poll_box > .poll_btn > button.regist {background:#606060}
+main.subpage > div.container > div.context > section .page_poll > .info {display:table; box-sizing:border-box; width:100%; padding:15px 20px; background-color:#e1edfa}
+main.subpage > div.container > div.context > section .page_poll > .info > dt {display:table-cell; vertical-align:middle; font-size:14px}
+main.subpage > div.container > div.context > section .page_poll > .info > dt > i {width:25px; height:25px; line-height:25px; font-size:25px; margin-right:3px; border-radius:50%; background:#fff; vertical-align:middle}
+main.subpage > div.container > div.context > section .page_poll > .info > dd {display:table-cell; vertical-align:middle; font-size:14px}
+main.subpage > div.container > div.context > section .page_poll > .info > dd > i {font-style:normal; margin:0 15px; color:#b4bec8}
+main.subpage > div.container > div.context > section .page_poll > .info > dd.btn {text-align:right}
+main.subpage > div.container > div.context > section .page_poll > .info > dd > a {display:inline-block; height:26px; line-height:26px; padding:0 10px; border:1px solid #a3a3a3; border-radius:3px; font-size:12px; background:#fff}
+main.subpage > div.container > div.context > section .page_poll > .info > dd > a > i {margin-left:5px; font-weight:bold; vertical-align:middle}
+main.subpage > div.container > div.context > section .page_poll > .info > dd > a:hover {text-decoration:none}
+main.subpage > div.container > div.context > section .full_img_box > img {width:100%}
+
+
+main.subpage > div.container > div.context > section .contact_box {padding:5px 20px; line-height:25px; background-color:#f7f7f9}
+main.subpage > div.container > div.context > section .contact_box > span {display:inline-block; font-size:14px; margin:10px 40px 10px 0; white-space:nowrap}
+main.subpage > div.container > div.context > section .contact_box > span > i {width:24px; height:24px; margin-right:7px; border-radius:50%; text-align:center; line-height:24px; vertical-align:middle; color:#fff; background:#c6c6c7}
+
+.beige {color:#c29b61}
+.blue {color:#5291dc}
+.orange {color:#f7751e}
+.hr {display:block; height:1px; font-size:0; line-height:0; background-color:#e6e6e6}
+#ModuleCtlListForm {margin:50px 0 30px}
+
+/* sticky */
+.sticky_bar {display:none; position:fixed; top:0; left:0; width:100%; height:68px; border-bottom:1px solid #979899; background:#fff; z-index:900}
+.sticky_bar > div.container:after {content:''; display:block; clear:both}
+.sticky_bar > div.container > h1 {display:inline-block; float:left; width:140px; height:68px; font-size:0; background-image:url(/modules/kgu/templets/portal/images/logo_b.png); background-position:0 50%; background-repeat:no-repeat; background-size:contain; vertical-align:middle}
+.sticky_bar > div.container > h1 > a {font-size:0; display:block; width:100%; height:100%; text-decoration:none;}
+.sticky_bar > div.container > h3 {display:inline-block; float:right; width:calc(100% - 280px); font-size:20px; line-height:68px}
+.sticky_bar > div.container > h3:after {content:''; display:block; clear:both}
+.sticky_bar > div.container > h3 > .nbreadcrumb {float:right; margin-top:15px}
+div.nbreadcrumb div[data-role=input][data-type=select] > button > i:before {content:'\e910'}
+div.nbreadcrumb div[data-role=input][data-type=select].extend > button > i:before {content:'\e909'}
+
+
+@media (max-width:767px) {
+	main.subpage > div.intro {height:88px}
+
+	main.subpage > div.nbreadcrumb > div.container {padding:0px;}
+	main.subpage > div.nbreadcrumb > div.container > a {border-left:0px solid #e6e4e7;}
+	main.subpage > div.nbreadcrumb > div.container > div[data-role=input] {width:calc((100% - 44px)/2);}
+	main.subpage > div.nbreadcrumb > div.container > div[data-role=input] > button span {padding:0px 10px 0px 10px;}
+	main.subpage > div.nbreadcrumb > div.container > div[data-role=input][data-name=page] {width:calc((100% - 44px)/2);}
+	main.subpage > div.nbreadcrumb > div.container > div[data-role=input][data-type=select] > ul > li {padding:0px 10px 0px 10px;}
+	main.subpage > div.nbreadcrumb > div.container > div[data-role=input][data-type=select] > button {border-right:0px;}
+
+
+	main.subpage > div.container > div.context {display:block; margin-top:0;}
+	main.subpage > div.container > div.context > nav {display:none;}
+	main.subpage > div.container > div.context > section {display:block; width:100%; padding:0px 0px 10px 0px;}
+	main.subpage > div.container > div.context > section > h3 {font-size:24px; height:100px; line-height:100px; padding-left:0; text-align:center}
+	main.subpage > div.container > div.context > section > h3 > .nbreadcrumb {display:none}
+	main.subpage > div.container > div.context > section .bg_box {padding:30px 10px 30px 10px}
+
+	.sticky_bar {min-width:320px}
+	.sticky_bar > div.container > h3 {width:calc(100% - 160px)}
+	.sticky_bar > div.container > h3 > span {display:none}
+	.sticky_bar > div.container > h3 > div.nbreadcrumb > a {display:none}
+	.sticky_bar > div.container > h3 > div.nbreadcrumb > div[data-role=input] {display:none}
+	.sticky_bar > div.container > h3 > div.nbreadcrumb > div[data-role=input]:after {content:none}
+	.sticky_bar > div.container > h3 > div.nbreadcrumb > div[data-role=input][data-name=page] {display:block}
+
+	main.subpage > div.container > div.context > section .page_poll > .poll_box > .radio_wrap {padding-right:0}
+	main.subpage > div.container > div.context > section .page_poll > .poll_box > .poll_btn {position:static; margin-top:20px}
+	main.subpage > div.container > div.context > section .page_poll > .info,
+	main.subpage > div.container > div.context > section .page_poll > .info > dt,
+	main.subpage > div.container > div.context > section .page_poll > .info > dd {display:block}
+	main.subpage > div.container > div.context > section .page_poll > .info > dt > i {display:none}
+	main.subpage > div.container > div.context > section .page_poll > .info > dt,
+	main.subpage > div.container > div.context > section .page_poll > .info > dd {margin-bottom:10px}
+	main.subpage > div.container > div.context > section .page_poll > .info > dd > i {display:none}
+	main.subpage > div.container > div.context > section .page_poll > .info > dd > span {display:block; margin-bottom:10px}
+	main.subpage > div.container > div.context > section .page_poll > .info > dd.btn {text-align:left}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	main.subpage > div.intro {height:88px}
+
+	main.subpage > div.container > div.context {display:block; margin-top:20px;}
+	main.subpage > div.container > div.context > nav {display:none;}
+	main.subpage > div.container > div.context > section {display:block; width:100%; padding:0px 0px 10px 0px;}
+	main.subpage > div.container > div.context > section > h3 {font-size:24px; height:70px; line-height:70px; padding-left:32px;}
+	main.subpage > div.container > div.context > section .bg_box {padding:30px 20px 30px 20px}
+
+	.sticky_bar > div.container > h3 {width:calc(100% - 160px)}
+	.sticky_bar > div.container > h3 > span {display:none}
+	.sticky_bar > div.container > h3 > div.nbreadcrumb > a {display:none}
+	.sticky_bar > div.container > h3 > div.nbreadcrumb > div[data-role=input] {display:none}
+	.sticky_bar > div.container > h3 > div.nbreadcrumb > div[data-role=input]:after {content:none}
+	.sticky_bar > div.container > h3 > div.nbreadcrumb > div[data-role=input][data-name=page] {display:block}
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+	main.subpage > div.container > div.context {margin-top:40px;}
+	main.subpage > div.container > div.context > nav {width:185px;}
+	main.subpage > div.container > div.context > nav > h2 {font-size:16px;}
+	main.subpage > div.container > div.context > nav > ul > li > a {font-size:13px; padding:15px 18px; word-break:break-word; word-wrap:break-word;}
+	/* main.subpage > div.container > div.context > section {padding:0px 0px 20px 20px;} */
+
+	.sticky_bar > div.container > h3 {width:calc(100% - 245px)}
+}

@@ -1,0 +1,70 @@
+/**
+ * 이 파일은 iModule 경기대 연동모듈의 일부입니다. (https://www.imodule.kr)
+ *
+ * 경기대 핵심역량 진단 외부파일 스타일시트
+ *
+ * @file /modules/kgu/templets/portal/styles/diagnosis.css
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 3.0.0
+ * @modified 2017. 12. 4.
+ */
+
+div[data-module=essential][data-context=diagnosis] div.start {padding-bottom:20px;}
+div[data-module=essential][data-context=diagnosis] div.start div.diagram {background:#f7f7f2; padding:50px 20px; text-align:center;}
+div[data-module=essential][data-context=diagnosis] div.start div.diagram > img {display:block; margin:0px auto; max-width:100%;}
+
+div[data-module=essential][data-context=diagnosis] div.start div.text {font-size:14px; line-height:2.0;}
+div[data-module=essential][data-context=diagnosis] div.start div.diagram + div.text {margin-top:50px;}
+
+div[data-module=essential][data-context=diagnosis] div.start div + div {margin-top:20px;}
+div[data-module=essential][data-context=diagnosis] div.start div + h4 {margin-top:20px;}
+
+div[data-module=essential][data-context=diagnosis] div.start.star div.diagram {padding:30px 0px;}
+div[data-module=essential][data-context=diagnosis] div.start.star div.diagram_full {padding:0; font-size:0; margin-top:0px !important;}
+div[data-module=essential][data-context=diagnosis] div.start.star div.diagram_full > img {display:block; width:100%;}
+
+div[data-module=essential][data-context=diagnosis] ul[data-role=table].result > li > span.essential {width:150px; font-weight:bold; text-align:center;}
+div[data-module=essential][data-context=diagnosis] ul[data-role=table].result > li > span.description {width:100%;}
+div[data-module=essential][data-context=diagnosis] ul[data-role=table].result > li.tbody > span.description {height:20px; padding:10px; line-height:25px;}
+div[data-module=essential][data-context=diagnosis] ul[data-role=table].result > li.tbody > span.description > p {padding-left:20px; white-space:normal;}
+div[data-module=essential][data-context=diagnosis] ul[data-role=table].result > li.tbody > span.description > p > i {display:block; width:2px; height:2px; background:#666; float:left; margin:9px 0px 9px -12px; vertical-align:top;}
+
+
+
+div.essential_cnt {padding-top:10px}
+div.essential_cnt > h4 {position:relative; height:auto; margin-bottom:18px; padding-left:20px; font-size:18px; line-height:24px}
+div.essential_cnt > h4:after {content:''; display:block; position:absolute; left:0; top:6px; width:12px; height:12px; background:#3886cc}
+div.essential_cnt > .gray_box {padding:40px 0; margin-bottom:40px; text-align:center; background:#fafafa}
+div.essential_cnt > .gray_box > img {max-width:100%}
+div.essential_cnt .table_box {overflow:hidden; overflow-x:auto}
+div.essential_cnt .table_box > table {min-width:800px; border-top:1px solid #222; border-collapse:collapse; font-size:14px; line-height:1.4}
+div.essential_cnt .table_box > table tr.bg_gray {background:#fafafa}
+div.essential_cnt .table_box > table th {padding:15px 10px; border:1px solid #e6e6e6; background:#f5f5f5; color:#222; text-align:center}
+div.essential_cnt .table_box > table td {padding:15px 10px; border:1px solid #e6e6e6; color:#666; text-align:center; word-break:keep-all}
+div.essential_cnt .table_box > table td.a_l {text-align:left}
+div.essential_cnt .table_box > table th:first-child,
+div.essential_cnt .table_box > table td:first-child {border-left:0 none}
+div.essential_cnt .table_box > table th:last-child,
+div.essential_cnt .table_box > table td:last-child {border-right:0 none}
+div.essential_cnt .table_box > table td.pt_color1 {color:#f15922}
+div.essential_cnt .table_box > table td.pt_color2 {color:#f7941e}
+div.essential_cnt .table_box > table td.pt_color3 {color:#00ac5c}
+div.essential_cnt .table_box > table td.pt_color4 {color:#a75db2}
+div.essential_cnt .table_box > table td.pt_color5 {color:#055dad}
+
+div.essential_cnt > p.txt {font-size:14px; line-height:26px; color:#666}
+div.essential_cnt > p.dot {position:relative; margin-bottom:10px; padding-left:10px; font-size:14px; line-height:23px; color:#666}
+div.essential_cnt > p.dot:after {content:''; display:block; position:absolute; left:0; top:10px; width:3px; height:3px; background:#666}
+
+div.essential_cnt > .circle_box {font-size:0; text-align:center}
+div.essential_cnt > .circle_box > i.fa {width:20px; height:35px; margin:0 20px; font-size:35px; color:#adadad; text-align:center; line-height:35px; vertical-align:middle}
+div.essential_cnt > .circle_box > div {display:inline-block; box-sizing:border-box; width:160px; height:160px; border-radius:50%; color:#fff; vertical-align:middle; text-align:center}
+div.essential_cnt > .circle_box > div > a {display:block; width:100%; height:100%; color:#fff; text-decoration:none}
+
+div.essential_cnt > .circle_box > div strong {display:block; position:relative; padding:30px 0; font-size:18px}
+div.essential_cnt > .circle_box > div strong:after {content:''; display:block; position:absolute; left:50%; bottom:15px; margin-left:-7px; width:14px; height:1px; background:#fff}
+div.essential_cnt > .circle_box > div p {padding:0 20px; font-size:13px; line-height:18px; word-break:keep-all}
+div.essential_cnt > .circle_box > div.circle01 {background:#246eaa}
+div.essential_cnt > .circle_box > div.circle02 {background:#2ba3b5}
+div.essential_cnt > .circle_box > div.circle03 {background:#2fbbba}

@@ -1,0 +1,29 @@
+{
+	"title":{
+		"ko":"경기대학교 portal 템플릿 "
+	},
+	"version":"3.0.0",
+	"author":{
+		"name":"wioz",
+		"email":""
+	},
+	"homepage":"https://www.coursemos.kr",
+	"language":"ko",
+	"layouts":{
+		"index":{
+			"ko":"인덱스페이지"
+		},
+		"subpage":{
+			"ko":"서브페이지"
+		}
+	},
+	"configs":{
+
+	},
+	"styles":[
+		"/styles/style.css"
+	],
+	"scripts":[
+		"/scripts/script.js"
+	]
+}

@@ -1,0 +1,439 @@
+/**
+* 이 파일은 경기대 연동모듈의 일부입니다. (https://www.imodule.kr)
+*
+* 경기대 포털 스타일시트
+*
+* @file /templets/kgu/styles/style.css
+* @author Arzz (arzz@arzz.com)
+* @license MIT License
+* @version 3.0.0.160910
+*/
+
+
+
+html, body {font-size:12px; color:#333}
+body {background:#f6f8fa}
+input, textarea, button, select {border:0 none}
+input[type=button], input[type=submit], button {cursor:pointer}
+ul, ol, li, dl, dt, dd {list-style:none}
+a {color:#333; outline:none; text-decoration:none}
+a:hover {text-decoration:underline}
+body {background:#fff;}
+
+
+/* 헤더 */
+
+header {position:absolute; top:0; left:0; width:100%; height:125px; border-bottom:1px solid rgba(255,255,255,.4); z-index:1}
+header.on {height:390px; background:#0b4696; border-bottom:0 none}
+header > .top {height:38px; background:rgba(0,0,0,.3)}
+header > .top > div.container > .link {float:left; font-size:0}
+header > .top > div.container > .user {float:right; font-size:0}
+header > .top > div.container > .user > a > i {margin-right:8px;}
+header > .top > div.container > div > a {display:inline-block; padding:0 20px; font-size:13px; line-height:38px; color:rgba(255,255,255,.9)}
+header > .top > div.container > div > a:hover {position:relative; text-decoration:none; color:#fff; background:rgba(0,0,0,.3)}
+header > .top > div.container > div > a:hover:after {content:''; display:block; position:absolute; bottom:0; left:0; width:100%; height:2px; background:#f7941e}
+
+header > nav {height:87px;}
+header.on > nav {border-bottom:1px solid rgba(255,255,255,.4)}
+header > nav > .top_menu {position:relative}
+header > nav > .top_menu > div.container {font-size:0; line-height:1}
+header > nav > .top_menu > div.container > h1 {display:inline-block; width:180px; height:87px; font-size:0; background-position:0 50%; background-repeat:no-repeat; background-size:contain; vertical-align:middle}
+header > nav > .top_menu > div.container > h1 > a {font-size:0; display:block; width:100%; height:100%; text-decoration:none;}
+header > nav > .top_menu > div.container > ul {display:inline-block; width:calc(100% - 290px); height:87px; font-size:0; vertical-align:middle; text-align:center;}
+header > nav > .top_menu > div.container > ul > li {display:inline-block; position:relative; height:87px}
+header > nav > .top_menu > div.container > ul > li > a {display:block; font-size:18px; height:87px; padding:0 25px; line-height:87px; text-decoration:none; color:#fff;}
+header > nav > .top_menu > div.container > ul > li > em {content:""; display:none; position:absolute; bottom:-1px; left:0; width:100%; height:3px; background:#fff}
+header > nav > .top_menu > div.container > ul > li:hover > em {display:block}
+
+header > nav > .top_menu > div.container > ul > li > div.submenu {display:none; position:absolute; left:0; top:87px; text-align:left}
+header > nav > .top_menu > div.container > ul > li:hover > div.submenu {display:block}
+header > nav > .top_menu > div.container > ul > li > div.submenu > ul {padding:20px 0; white-space:nowrap}
+header > nav > .top_menu > div.container > ul > li > div.submenu > ul > li {display:inline-block; vertical-align:top}
+header > nav > .top_menu > div.container > ul > li > div.submenu > ul > li + li {padding-left:50px}
+header > nav > .top_menu > div.container > ul > li > div.submenu > ul > li > a {display:block; font-size:16px; line-height:40px; color:#bac8db; font-size:16px; white-space:nowrap}
+header > nav > .top_menu > div.container > ul > li > div.submenu > ul > li > a:hover {text-decoration:underline; color:#fff}
+/* @@헤더 서브메뉴 끝 */
+
+header > nav > .top_menu > div.container > div {float:right; width:100px; height:50px; margin:20px -10px 0 0; vertical-align:middle; display:inline-block}
+
+header > nav > .top_menu > div.container > div > button {display:inline-block; background:transparent; border:0px; color:#fff; width:50px; height:50px; text-align:center; line-height:50px; padding:0px; vertical-align:middle; cursor:pointer; font-size:36px}
+header > nav > .top_menu > div.container > div > button:hover {color:#fff}
+header > nav > .top_menu > div.container > div > button[data-action=search] {font-size:25px;}
+/* header > nav > .top_menu > div.container > div > button[data-action=all] {display:none} */
+header > nav > .top_menu > div.container > div > button[data-action=all].opened > i:before {content:"\eb04";}
+header > nav > .top_menu > div.container > div > button.slide {display:none}
+
+header > nav > .top_all_menu {position:relative; top:-2px; right:0; z-index:5; width:100%; padding:20px 0px; background-color:#0b4696; display:none; z-index:999}
+header > nav > .top_all_menu > div.container > ul {list-style:none; display:table; table-layout:fixed; width:calc(100% + 40px); margin:0px -20px; padding:0px; box-sizing:border-box;}
+header > nav > .top_all_menu > div.container > ul > li {display:table-cell; width:100%; vertical-align:top; border-left:1px solid rgba(255,255,255,0.1); padding-left:0px;}
+header > nav > .top_all_menu > div.container > ul > li:first-child {border-left:0px solid rgba(255,255,255,0.3);}
+header > nav > .top_all_menu > div.container > ul > li > div.box {padding:10px 20px;}
+header > nav > .top_all_menu > div.container > ul > li > div.box:first-child {min-height:260px;}
+header > nav > .top_all_menu > div.container > ul > li > div.box > h4 {font-size:20px; color:#fff; margin-bottom:20px;}
+header > nav > .top_all_menu > div.container > ul > li > div.box > ul {list-style:none;}
+header > nav > .top_all_menu > div.container > ul > li > div.box > ul > li > i {width:2px; height:2px; display:block; float:left; margin:14px 8px 14px 0px; background:rgba(255,255,255,0.7); vertical-align:middle;}
+header > nav > .top_all_menu > div.container > ul > li > div.box > ul > li > a {display:inline-block; max-width:calc(100% - 10px); min-height:20px; line-height:20px; font-size:14px; color:rgba(255,255,255,0.7); text-decoration:none; vertical-align:middle; margin:5px 0px; box-sizing:border-box; word-break:break-word; word-wrap:break-word;}
+header > nav > .top_all_menu > div.container > ul > li > div.box > ul > li > a:hover {color:#fff; text-decoration:underline;}
+header > nav > .top_all_menu > div.container {position:relative;}
+header > nav > .top_all_menu > div.container:after {top:0; right:15px; border:solid 0px transparent; content:" "; height:0; width:0; position:absolute; border-bottom-color:#0b4696; border-width:10px; margin-top:-40px;}
+
+/* 메인 */
+
+main > .visual {position:relative; padding-top:125px; height:375px;}
+main > .visual > .visual_img {position:absolute; left:0; top:0; width:100%; height:100%; z-index:-1}
+main > .visual > .visual_img {width:100%; height:100%; background-repeat:no-repeat; background-position:center; background-size:cover}
+main > .visual > .cnt {padding-top:120px}
+main > .visual > .cnt:after {content:''; display:block; clear:both}
+main > .visual ~ section {padding:60px 0}
+
+/* 로그인위젯 */
+main > .visual > .cnt > .program aside.login {float:right; width:480px; height:180px}
+
+
+/* 위젯 */
+.thema_bg {background-color:#182f7a}
+.point_bg {background-color:#002147}
+/* main > .ctl ul[data-role=list] {margin-left:-20px; margin-top:-20px; font-size:0;}
+main > .ctl ul[data-role=list] > li {width:25%; padding-left:20px; padding-top:20px; box-sizing:border-box; display:inline-block; vertical-align:top;} */
+main > .ctl ul[data-role=list] > li.empty {display:block; width:auto; padding-left:0px; padding-top:0px; margin-left:20px; margin-top:30px; height:425px; background:#f5f5f5 url(../images/noprogram.png) no-repeat 50% 150px; box-sizing:border-box; padding-top:250px; font-size:20px; text-align:center;}
+main > .ctl div[data-role=item] {margin:0 10px; border:1px solid #ebebeb;}
+main > .ctl div[data-role=item] > div.cover {width:100%; padding-bottom:60%; height:0; background-image:url(../images/noimage.png); background-size:cover; background-position:absolute; position:relative; box-shadow:0px 1px 3px rgba(0,0,0,0.1);}
+main > .ctl div[data-role=item] > div.cover > a {display:block; width:100%; height:100%; position:absolute; top:0; left:0; font-size:0; z-index:5;}
+main > .ctl div[data-role=item] > div.cover > label {position:absolute; width:60px; height:60px; color:#fff; font-size:0px; padding:10px 0px; text-align:center; box-sizing:border-box;}
+main > .ctl div[data-role=item] > div.cover > label span {display:block; height:20px; line-height:20px; font-size:14px; letter-spacing:-1px;}
+main > .ctl div[data-role=item] > div.cover > label span.dday {font-weight:bold;}
+main > .ctl div[data-role=item] > div.cover > label span.point i {display:inline-block; width:16px; height:16px; border:1px solid #fff; border-radius:50%; line-height:16px; font-style:normal; margin:1px 3px 1px 0px; vertical-align:middle; font-size:11px;}
+main > .ctl div[data-role=item] > div.cover > label.step1 {background-color:rgba(41,196,137,0.8);}
+main > .ctl div[data-role=item] > div.cover > label.step2 {background-color:rgba(51,150,234,0.8);}
+main > .ctl div[data-role=item] > div.cover > label.step3 {background-color:rgba(248,51,143,0.8);}
+main > .ctl div[data-role=item] > div.cover > label.step4 {background-color:rgba(129,129,140,0.8);}
+main > .ctl div[data-role=item] > div.cover > div.graph {background:rgba(0,0,0,0.75); width:100%; height:100%; position:absolute; top:0; left:0; font-size:0; z-index:1; display:none;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div {width:100%; height:100%; position:relative; padding:20px 20px 40px 40px; box-sizing:border-box;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > .grid {display:block; width:100%; height:100%; box-sizing:border-box; border-left:1px solid rgba(255,255,255,0.4); border-bottom:1px solid rgba(255,255,255,0.4); border-top:1px solid rgba(255,255,255,0.4);}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > .grid > i {display:block; height:10%; border-bottom:1px solid rgba(255,255,255,0.1); box-sizing:border-box;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > .grid > i:nth-child(5) {border-bottom:1px solid rgba(255,255,255,0.4);}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.y {position:absolute; top:10px; left:0px; bottom:30px; width:40px; vertical-align:middle; font-size:12px;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.y > ul {position:relative; width:100%; height:100%; list-style:none;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.y > ul > li {position:absolute; left:0px; line-height:20px; width:35px; text-align:right; color:rgba(255,255,255,0.8); font-size:10px;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.y > ul > li:nth-child(1) {top:0px;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.y > ul > li:nth-child(2) {top:50%; margin-top:-10px;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.y > ul > li:nth-child(3) {bottom:0px;}
+
+main > .ctl div[data-role=item] > div.cover > div.graph > div > ul.x {display:table; width:100%; table-layout:fixed; list-style:none;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > ul.x > li {display:table-cell; font-size:11px; text-align:center; padding-top:8px; color:rgba(255,255,255,0.8); line-height:14px; height:28px;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > ul.x > li > span {height:28px; line-height:14px; overflow:hidden; display:block;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item {position:absolute; top:20px; left:40px; right:20px; bottom:40px;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul {list-style:none; display:table; width:100%; height:100%; table-layout:fixed;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul > li {display:table-cell; vertical-align:bottom; text-align:center;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul > li > div {display:inline-block; width:80%; max-width:10px; background:transparent;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul > li:nth-child(1) > div {background:#2A8BD1;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul > li:nth-child(2) > div {background:#0BBCD3;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul > li:nth-child(3) > div {background:#28CC96;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul > li:nth-child(4) > div {background:#F9BC4B;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul > li:nth-child(5) > div {background:#FA8750;}
+main > .ctl div[data-role=item] > div.cover > div.graph > div > div.item > ul > li:nth-child(6) > div {background:#EF5648;}
+
+main > .ctl div[data-role=item]:hover > div.cover > div.graph {display:block;}
+
+main > .ctl div[data-role=item] > div.content {padding:20px;}
+main > .ctl div[data-role=item] > div.content > b {display:block; font-size:20px; height:50px; line-height:25px; letter-spacing:-1px; overflow:hidden;}
+main > .ctl div[data-role=item] > div.content > b > a {color:#000; text-decoration:none;}
+
+main > .ctl div[data-role=item] > div.content > label {display:block; margin-top:20px; height:15px; font-size:0; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+main > .ctl div[data-role=item] > div.content > label > span {display:inline-block; height:15px; line-height:15px; font-size:14px;}
+main > .ctl div[data-role=item] > div.content > label > span.category {color:#666; padding-right:10px; border-right:1px solid #e0e0e0;}
+main > .ctl div[data-role=item] > div.content > label > span.department {color:#3076d6; padding-left:10px;}
+main > .ctl div[data-role=item] > div.content > label > span > a {color:inherit; text-decoration:none;}
+main > .ctl div[data-role=item] > div.content > div.schedule {height:30px; line-height:30px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; font-size:14px; color:#999;}
+main > .ctl div[data-role=item] > div.content > div.tags {height:20px; font-size:0; overflow:hidden; list-style:none; margin-top:20px;}
+main > .ctl div[data-role=item] > div.content > div.tags > a {display:inline-block; white-space:nowrap; margin-right:10px; height:20px; line-height:20px; font-size:14px; text-decoration:none; color:#333;}
+main > .ctl div[data-role=item] > div.content > div.progress {margin-top:20px; height:3px; background:#e0e0e0;}
+main > .ctl div[data-role=item] > div.content > div.progress > div {background:#0088cc; height:3px;}
+main > .ctl div[data-role=item] > div.content > div.progress.date > div {background:#ef343b;}
+main > .ctl div[data-role=item] > div.content > div.status {margin-top:5px;}
+main > .ctl div[data-role=item] > div.content > div.status > i {width:24px; height:24px; border:1px solid #e0e0e0; border-radius:50%; vertical-align:middle; font-size:14px; color:#999; box-sizing:border-box; text-align:center; overflow:hidden; line-height:22px; margin-right:5px;}
+main > .ctl div[data-role=item] > div.content > div.status > span {display:inline-block; height:24px; line-height:24px; color:#999; font-size:13px; vertical-align:middle;}
+main > .ctl div[data-role=item] > div.content > div.status > span.applicant {float:right;}
+main > .ctl div[data-role=item] > div.content > div.status > span.applicant > b {color:#0088cc;}
+
+main > .ctl div[data-role=item] > div.content a:hover {color:#002147;}
+
+main > .ctl + main > .ctl {margin-top:20px;}
+main > .ctl h4 {font-size:20px; margin-bottom:30px; color:#000}
+main > .ctl div[data-role=input][data-name=category] {width:240px;}
+main > .ctl div[data-role=input][data-name=category] > button {border-color:transparent;}
+main > .ctl div[data-role=input][data-name=category] > button:hover {border-color:#e1e1e1;}
+main > .ctl div[data-role=input][data-name=category] > button:hover > span > i {color:transparent;}
+main > .ctl div[data-role=input][data-name=category] > button > span {font-size:18px; font-weight:bold;}
+main > .ctl div[data-role=input][data-name=category] > button > span > i {float:left; margin-left:-10px; font-size:14px; width:20px; height:38px; line-height:38px; vertical-align:middle; color:#182f7a; text-align:left;}
+main > .ctl div[data-role=input][data-name=category] > button > i {font-size:14px;}
+main > .ctl div[data-role=input][data-name=category] > button[disabled] {border-color:transparent !important; background:transparent !important; opacity:1.0 !important; cursor:default !important;}
+main > .ctl div[data-role=input][data-name=category] > button[disabled] > i {color:transparent !important;}
+main > .ctl div[data-role=input][data-name=category] > button[disabled]:hover > span > i {color:#182f7a;}
+
+main > .ctl div[data-role=input][data-name=category] > ul > li {font-size:16px; padding-left:20px;}
+
+main > .ctl div[data-role=input][data-name=category] > button:focus {border-color:#66afe9;}
+main > .ctl div[data-role=input][data-name=category] > button:focus > span > i {color:transparent;}
+main > .ctl div[data-role=input][data-name=category].extend > button {border-color:#66afe9;}
+main > .ctl div[data-role=input][data-name=category].extend > button > span > i {color:transparent;}
+
+main > .ctl div[data-role=list] {width:100%; position:relative;}
+main > .ctl div[data-role=list] > div {height:100%; overflow:hidden}
+main > .ctl div[data-role=list] > div > ul {width:calc(100% + 20px); height:calc(100% + 30px); margin-left:-10px; overflow-x:hidden; overflow-y:hidden; list-style:none; white-space:nowrap; font-size:0; -webkit-overflow-scrolling:touch;}
+main > .ctl div[data-role=list] > div > ul > li {display:inline-block; vertical-align:top; width:25%; padding-left:20px; box-sizing:border-box; white-space:normal;}
+
+main > .ctl div[data-role=list] > button {display:none; width:30px; height:30px; position:absolute; top:calc(50% - 15px); z-index:10; border:1px solid #ccc; border-radius:50%; text-align:center; line-height:28px; background:#fff; box-shadow:1px 1px 2px rgba(0,0,0,0.2); cursor:pointer; font-size:16px; color:#222;}
+main > .ctl div[data-role=list] > button[data-action=left] {left:-15px;}
+main > .ctl div[data-role=list] > button[data-action=right] {right:-15px;}
+
+@keyframes indicator {
+	0% {background:#182f7a;}
+	50% {background:#f4f4f4;}
+}
+
+main > .ctl div[data-role=list] > i.indicator {display:none;}
+main > .ctl div[data-role=list] > div > span {display:none;}
+main > .ctl div[data-role=list].loading > div {display:none;}
+main > .ctl div[data-role=list].loading > button {display:none;}
+main > .ctl div[data-role=list].loading > i.indicator {width:64px; height:64px; position:absolute; top:calc(50% - 32px); left:calc(50% - 32px); display:block;}
+main > .ctl div[data-role=list].loading > i.indicator > div {width:64px; height:64px; transform:translate(-100px,-100px) scale(1) translate(100px, 100px); position:relative;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i {position:absolute; width:20px; height:20px; background:#f4f4f4; animation:indicator 1s linear infinite; display:block;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i:nth-child(1) {left:0px; top:0px; animation-delay:0s;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i:nth-child(2) {left:22px; top:0px; animation-delay:0.125s;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i:nth-child(3) {left:44px; top:0px; animation-delay:0.25s;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i:nth-child(4) {left:0px; top:22px; animation-delay:0.875s;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i:nth-child(5) {left:44px; top:22px; animation-delay:0.375s;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i:nth-child(6) {left:0px; top:44px; animation-delay:0.75s;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i:nth-child(7) {left:22px; top:44px; animation-delay:0.625s;}
+main > .ctl div[data-role=list].loading > i.indicator > div > i:nth-child(8) {left:44px; top:44px; animation-delay:0.5s;}
+
+main > .ctl div[data-role=list].empty > div {background:#f4f4f4;}
+main > .ctl div[data-role=list].empty > button {display:none;}
+main > .ctl div[data-role=list].empty > div > span {display:block; text-align:center; font-size:14px; position:absolute; width:100%; top:calc(50% + 50px); left:0;}
+main > .ctl div[data-role=list].empty > i.indicator {width:64px; height:64px; position:absolute; top:calc(50% - 32px); left:calc(50% - 32px); display:block;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i {position:absolute; width:20px; height:20px; background:#ccc; display:block;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i:nth-child(1) {left:0px; top:0px;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i:nth-child(2) {left:22px; top:0px;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i:nth-child(3) {left:44px; top:0px;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i:nth-child(4) {left:0px; top:22px;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i:nth-child(5) {left:44px; top:22px;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i:nth-child(6) {left:0px; top:44px;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i:nth-child(7) {left:22px; top:44px;}
+main > .ctl div[data-role=list].empty > i.indicator > div > i:nth-child(8) {left:44px; top:44px;}
+
+@media (max-width:767px) {
+
+	/* main > .ctl div[data-role=list] {margin:0px -10px; width:calc(100% + 20px);}
+	main > .ctl div[data-role=list] > div > ul {overflow-x:scroll; margin-left:-10px; padding-left:10px; padding-right:500px;}
+	main > .ctl div[data-role=list] > div > ul > li {width:calc(100% - 60px); max-width:320px; padding-left:10px;}
+	main > .ctl div[data-role=list] > div > ul > li:last-child {margin-right:30px;}
+	main > .ctl div[data-role=list] > button {display:none;} */
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+	/* main > .ctl div[data-role=list] {margin:0px -10px; width:calc(100% + 20px);}
+	main > .ctl div[data-role=list] > div > ul {overflow-x:scroll; margin-left:-10px; padding-left:10px; padding-right:500px;}
+	main > .ctl div[data-role=list] > div > ul > li {width:calc(33.3333% - 20px); padding-left:10px;}
+	main > .ctl div[data-role=list] > div > ul > li:last-child {margin-right:30px;}
+	main > .ctl div[data-role=list] > button {display:none;} */
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+	main > .ctl div[data-role=list] > div > ul > li {width:33.3333%;}
+}
+
+/* 위젯커스텀 */
+.ctl-dots {float:right}
+.ctl-dots > ul {font-size:0}
+.ctl-dots > ul > li {height:20px; padding:2px 4px; line-height:20px; display:inline-block}
+.ctl-dots > ul > li > button {width:10px; height:10px; border-radius:50%; background:#d9d9d9}
+.ctl-dots > ul > li.slick-active > button {background:#3076d6}
+
+/* 사이드바 */
+div[data-widget=coursemos-sidebar][data-templet=default] aside > div.header.bgcolor1 {background:#0b4696}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > div.header > button.logout {color:#0b4696}
+div[data-widget=coursemos-sidebar] aside > ul.menu > li.selected > a {background:#00ac5c}
+div[data-widget=coursemos-sidebar][data-templet=default] aside > ul.menu > li > div.submenu {padding:0}
+div[data-widget=coursemos-sidebar] aside > ul.menu > li > div.submenu > a.selected {color:#f15922; background:#efefef}
+
+/* 위젯 css 끝 */
+
+main > .notice {background:#f5f7fa}
+main > .notice > div.container > .wrap {display:table; box-sizing:border-box; width:100%; min-height:260px; table-layout:fixed}
+main > .notice > div.container > .wrap > .notice {display:table-cell; padding-right:85px; vertical-align:top}
+main > .notice > div.container > .wrap > .notice > .tab_bar {margin-bottom:25px; border:1px solid #e0e0e0; background:#fff; font-size:0}
+main > .notice > div.container > .wrap > .notice > .tab_bar > li {display:inline-block}
+main > .notice > div.container > .wrap > .notice > .tab_bar > li.plus {float:right}
+main > .notice > div.container > .wrap > .notice > .tab_bar > li > button {width:100px; height:50px; border-right:1px solid #e0e0e0; font-size:14px; color:#000; background:#fff}
+main > .notice > div.container > .wrap > .notice > .tab_bar > li.selected > button {background:#014da1 ; color:#fff}
+main > .notice > div.container > .wrap > .notice > .tab_bar > li.plus > button {width:50px; border-right:0 none; border-left:1px solid #e0e0e0; font-weight:bold; color:#999}
+
+main > .notice > div.container > .wrap > .link {display:table-cell; width:364px; font-size:0; vertical-align:top}
+main > .notice > div.container > .wrap > .link > a {display:inline-block; width:180px; height:35px; font-size:14px; padding-top:85px; text-align:center; color:#fff}
+main > .notice > div.container > .wrap > .link > a.coach {background:#005aab url(/modules/kgu/templets/portal/images/ico_coach.png) no-repeat center 24px}
+main > .notice > div.container > .wrap > .link > a.workshop {margin:0 0 0 4px; background:#00ac5c url(/modules/kgu/templets/portal/images/ico_workshop.png) no-repeat center 25px}
+main > .notice > div.container > .wrap > .link > a.learn {margin:4px 0 0 0; background:#f15922 url(/modules/kgu/templets/portal/images/ico_learn.png) no-repeat center 29px}
+main > .notice > div.container > .wrap > .link > a.teach {margin:4px 0 0 4px; background:#f7941e url(/modules/kgu/templets/portal/images/ico_teach.png) no-repeat center 28px}
+
+
+main > .info > div.container > .wrap {display:table; box-sizing:border-box; width:100%; border:1px solid #ebebeb; table-layout:fixed}
+main > .info > div.container > .wrap > div.menu {display:table-cell; width:190px; background:#575766}
+main > .info > div.container > .wrap > div.menu > div > ul {list-style:none; width:100%; box-sizing:border-box; vertical-align:top;}
+main > .info > div.container > .wrap > div.menu > div > ul > li {width:100%; height:50px; display:block; box-sizing:border-box;}
+main > .info > div.container > .wrap > div.menu > div > ul > li > button {width:100%; height:50px; border:0px; background:transparent; cursor:pointer;}
+main > .info > div.container > .wrap > div.menu > div > ul > li > button > span {display:block; width:100%; height:50px; padding:0px 20px; border-bottom:1px solid #6a7388; cursor:pointer; box-sizing:border-box; color:#ccc; text-align:left; line-height:49px; font-size:15px;}
+main > .info > div.container > .wrap > div.menu > div > ul > li > button > span > i {float:right; display:none; width:auto; line-height:49px; font-size:15px; font-size:18px;}
+main > .info > div.container > .wrap > div.menu > div > ul > li.selected > button {background:#fff;}
+main > .info > div.container > .wrap > div.menu > div > ul > li.selected > button > span {border-color:transparent; color:#575766;}
+main > .info > div.container > .wrap > div.menu > div > ul > li.selected > button > span > i {display:inline-block}
+
+main > .info > div.container > .wrap > div.content {display:table-cell; box-sizing:border-box; width:100%; height:480px; padding:30px 40px; vertical-align:top;}
+
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.box {margin-bottom:0px;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.box > div > a {display:block; width:100%; height:188px; background-color:#eff9fe; background-repeat:no-repeat; background-position:50% 20px; box-sizing:border-box; text-align:center; padding-top:135px; font-size:15px; font-weight:bold; text-decoration:none; color:#0388a6;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.box > div > a > i {width:20px; height:20px; vertical-align:middle; background:#1da1c6; border-radius:50%; line-height:20px; text-align:center; color:#fff; box-sizing:border-box; padding-left:2px;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.box > div > a.teaching1 {background-image:url(../images/icon_teaching1.png);}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.box > div > a.teaching2 {background-image:url(../images/icon_teaching2.png);}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.box > div > a.teaching3 {background-image:url(../images/icon_teaching3.png);}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.box > div > a.teaching4 {background-image:url(../images/icon_teaching4.png);}
+
+main > .info > div.container > .wrap > div.content > div[data-tab] .no_content {display:table; width:100%; height:420px; background:#f2f7fc}
+main > .info > div.container > .wrap > div.content > div[data-tab] .no_content > span {display:table-cell; text-align:center; vertical-align:middle; font-size:18px; color:#014da1}
+main > .info > div.container > .wrap > div.content > div[data-tab] .no_content > span > img {vertical-align:middle; margin-right:20px}
+
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > h4 {font-size:18px; color:#333; height:30px; line-height:30px; padding-top:27px; padding-bottom:10px;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div.login {border:1px solid #e0e0e0; width:100%; height:140px; box-sizing:border-box;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget] ul {list-style:none; border-top:1px solid #e0e0e0; padding-top:10px;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget] ul > li {height:20px; padding:5px 0px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget] ul > li > a {display:block; width:100%; height:20px; line-height:20px; text-decoration:none; color:#666; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget] ul > li > a > i {display:block; float:left; width:2px; height:2px; margin:9px 10px 9px 0px; vertical-align:top; background:#999;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget] ul > li > a > time {float:right; font-size:12px; color:#999;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget] div.more {display:none;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget=workshop-recently] ul > li > a > i {width:50px; height:20px; line-height:20px; text-align:center; margin:0px 10px 0px 0px; font-style:normal;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget=workshop-recently] ul > li > a > i.close {color:#666; background:#e5e5e5;}
+main > .info > div.container > .wrap > div.content > div[data-tab].program > div.row > div > div[data-widget=workshop-recently] ul > li > a > i.open {color:#fff; background:#2196F3;}
+
+main > .info > div.container > .wrap > div.content > div[data-tab=ocw] div.row {margin-top:-20px;}
+main > .info > div.container > .wrap > div.content > div[data-tab=ocw] a {text-decoration:none; display:block; margin-top:10px;}
+main > .info > div.container > .wrap > div.content > div[data-tab=ocw] a > div.thumbnail {width:100%; height:154px; background-size:cover; background-position:50% 50%; border:1px solid #ccc; box-sizing:border-box;}
+main > .info > div.container > .wrap > div.content > div[data-tab=ocw] a > b {display:block; height:20px; line-height:20px; font-size:15px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; color:#333; margin-top:8px;}
+main > .info > div.container > .wrap > div.content > div[data-tab=ocw] a > p {display:block; height:14px; line-height:14px; font-size:13px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; color:#666;}
+
+/* footer */
+footer {background:#fff; border-top:1px solid #d6d6d6; position:relative;}
+footer > div.menu {height:55px; line-height:55px; border-bottom:1px solid #ebebeb;}
+
+footer > div.menu > div.container > ul {padding:0px 0px; list-style:none; height:55px;}
+footer > div.menu > div.container > ul > li {float:left; display:inline; height:55px; margin-right:30px}
+footer > div.menu > div.container > ul > li:first-child:before {display:none;}
+footer > div.menu > div.container > ul > li a {display:inline-block; height:55px; line-height:55px; font-size:14px; text-decoration:none; color:#000; background:transparent; border:0px;}
+
+footer > div.menu > div.container > ul > li.rt_select {float:right; position:relative; margin-right:0}
+footer > div.menu > div.container > ul > li.rt_select:before {display:none;}
+
+footer > div.menu > div.container > ul > li.rt_select > .sns {display:inline-block; height:55px; margin-right:70px; vertical-align:middle; font-size:0}
+footer > div.menu > div.container > ul > li.rt_select > .sns > li {display:inline-block; height:55px; line-height:55px; padding:0 3px;}
+footer > div.menu > div.container > ul > li.rt_select > .sns > li > a {display:block; height:55px; line-height:55px; color:#fff}
+footer > div.menu > div.container > ul > li.rt_select > .sns > li > a > i {display:inline-block; width:22px; height:22px; border-radius:50%; line-height:22px; text-align:center; background:#b3b3b3}
+
+
+footer > div.menu ul > li.rt_select .fam_site {display:inline-block; width:auto; min-width:180px; height:55px;}
+div[data-role=input][data-type=select].fam_site > button {height:55px; border:0 none; color:#222}
+div[data-role=input][data-type=select].fam_site > ul > li {height:55px; line-height:55px}
+
+footer > div.copyright {padding:40px 0px; background:#f2f3f5}
+footer > div.copyright > .container:after {content:''; display:block; clear:both}
+footer > div.copyright .f_logo {display:block; float:left; width:140px; margin-right:50px}
+footer > div.copyright .info {font-size:13px; color:#808080; line-height:24px}
+footer > div.copyright .info > p {word-break:keep-all}
+footer > div.copyright .info > p > span {margin-right:5px; white-space:nowrap}
+footer > div.copyright address {font-style:normal}
+footer > div.copyright address > span {white-space:nowrap}
+
+@media (max-width:767px) {
+	header {min-width:320px; height:auto}
+	header > .top {display:none}
+	header > nav > .top_menu > div.container > ul {display:none}
+	header > nav > .top_menu > div.container > div > button[data-action=all] {display:none;}
+	header > nav > .top_menu > div.container > div > button.slide {display:inline-block;}
+
+	body > div[data-role=wrapper] {min-width:320px}
+
+	main > .visual {height:auto; padding-top:88px; padding-bottom:50px}
+	main > .visual > .cnt {padding-top:70px}
+
+	div[data-widget=workshop-recently][data-templet=index] {float:none; width:100%}
+	main > .visual > .cnt > .program aside.login {float:none; margin-top:30px; width:100%; height:auto}
+
+
+	main > .notice > div.container > .wrap,
+	main > .notice > div.container > .wrap > .notice,
+	main > .notice > div.container > .wrap > .link {display:block}
+	main > .notice > div.container > .wrap > .notice {padding-right:0}
+	main > .notice > div.container > .wrap > .link {width:100%; margin-top:40px}
+	main > .notice > div.container > .wrap > .link > a {width:49%}
+	main > .notice > div.container > .wrap > .link > a.coach {background-color:#005aab}
+	main > .notice > div.container > .wrap > .link > a.workshop {margin:0 0 0 2%; background:#00ac5c url(/modules/kgu/templets/portal/images/ico_workshop.png) no-repeat center 25px}
+	main > .notice > div.container > .wrap > .link > a.learn {margin:2% 0 0 0; background:#f15922 url(/modules/kgu/templets/portal/images/ico_learn.png) no-repeat center 29px}
+	main > .notice > div.container > .wrap > .link > a.teach {margin:2% 0 0 2%; background:#f7941e url(/modules/kgu/templets/portal/images/ico_teach.png) no-repeat center 28px}
+
+	main > .info > div.container > .wrap {display:block; margin-top:10px;}
+	main > .info > div.container > .wrap > div.menu {display:block; width:100%; height:50px; overflow:hidden; background-image:none}
+	main > .info > div.container > .wrap > div.menu > div {width:100%; height:80px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch;}
+	main > .info > div.container > .wrap > div.menu > div > ul {display:table; width:100%; min-width:600px; height:50px; padding:0px; table-layout:fixed;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li {display:table-cell; border-left:1px solid #676b6d; height:50px;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li:first-child {border-left:0px;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li.selected {border-left-color:transparent;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li.selected + li {border-left-color:transparent;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li > button {height:50px; border-top:0px;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li > button > span {text-align:center; height:50px; line-height:50px; font-size:13px;}
+    main > .info > div.container > .wrap > div.menu > div > ul > li.selected > button > span i {display:none;}
+	main > .info > div.container > .wrap > div.content {display:block; height:auto; padding:0 20px; padding-top:10px; padding-bottom:10px;}
+	main > .info > div.container > .wrap > div.content > div[data-tab] > div.box {margin-bottom:10px;}
+	main > .info > div.container > .wrap > div.content > div[data-tab] > div.box > div > a {font-size:13px;}
+	main > .info > div.container > .wrap > div.content > div[data-tab] > div.box > div > a > i {width:16px; height:16px; line-height:16px; font-size:12px;}
+	main > .info > div.container > .wrap > div.content > div[data-tab] > div.row > div > ul > li > a {font-size:13px;}
+
+	main > .info > div.container > .wrap > div.content > div[data-tab] .no_content > span > img {display:block; margin:0 auto 30px}
+
+	footer > div.menu {height:auto}
+	footer > div.copyright .f_logo {width:auto; float:none; margin:0 0 10px 0; text-align:center}
+	footer > div.copyright address {text-align:center}
+	footer > div.copyright .info > p {text-align:center}
+	footer > div.copyright .info > p > span {display:block; white-space:normal; word-break:keep-all}
+	footer > div.copyright address > span {white-space:normal; word-break:keep-all}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	header {height:auto}
+	header > .top {display:none}
+	header > nav > .top_menu > div.container > ul {display:none}
+	header > nav > .top_menu > div.container > div > button[data-action=all] {display:none;}
+	header > nav > .top_menu > div.container > div > button.slide {display:inline-block;}
+
+	main > .visual {height:auto; padding-top:88px; padding-bottom:50px}
+	main > .visual > .cnt {padding-top:70px}
+
+	div[data-widget=workshop-recently][data-templet=index] {float:none; width:100%}
+	main > .visual > .cnt > .program aside.login {float:none; margin-top:30px; width:100%; height:auto}
+
+
+	main > .notice > div.container > .wrap > .notice {padding-right:40px}
+
+
+	main > .info > div.container > .wrap {display:block;}
+	main > .info > div.container > .wrap > div.menu {display:block; width:100%; height:50px; background-image:none}
+	main > .info > div.container > .wrap > div.menu > div > ul {display:table; width:100%; padding:0px; table-layout:fixed;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li {display:table-cell; border-left:1px solid #676b6d;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li:first-child {border-left:0px;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li.selected {border-left-color:transparent;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li.selected + li {border-left-color:transparent;}
+	main > .info > div.container > .wrap > div.menu > div > ul > li > button > span {text-align:center;}
+	main > .info > div.container > .wrap > div.content {display:block; padding:0 20px; padding-top:20px;}
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}

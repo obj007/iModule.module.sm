@@ -1,0 +1,125 @@
+
+.full_img_box.e_learn {margin-bottom:55px}
+.gray_box.e_learn02 {padding:30px 0}
+.gray_box.studio01 {padding:25px 0}
+.gray_box.studio02 {padding:30px 0}
+.gray_box.making01 {padding:30px 0}
+.gray_box.ocw_intro01 {padding:30px 0}
+.gray_box.ocw_room01 {padding:25px 0}
+.gray_box.ocw_room02 {padding:35px 0 30px; text-align:center}
+
+
+button.icon_btn {height:42px; border:0 none; border-radius:3px; font-size:16px; color:#fff; line-height:42px; background-color:#2256a7}
+button.icon_btn > span {float:left; display:block; box-sizing:border-box; height:42px; line-height:42px; padding:0 15px; font-size:16px; font-weight:bold; color:#fff}
+button.icon_btn:after {content:''; display:block; clear:both}
+button.icon_btn > i {float:right; width:42px; height:42px; line-height:42px; border-left:1px solid rgba(255,255,255,.2); text-align:center;}
+
+
+.cnt_wrap .blue.ico_link {position:relative; font-size:16px}
+.cnt_wrap .blue.ico_link:after {content:'\f2d2'; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin-left:10px}
+
+
+.gray_border_box {margin:10px 0 35px; padding:25px 20px; border:10px solid #ededf0}
+.gray_border_box > strong.tit {font-size:16px; color:#2256a7}
+.gray_border_box > em.dot {display:block; position:relative; padding-left:10px; color:#333; font-size:14px; font-weight:bold; font-style:normal}
+.gray_border_box > em.dot:after {content:''; display:block; position:absolute; left:0; top:9px; width:3px; height:3px; background:#203353}
+
+.gray_border_box .arr_txt {display:inline-block; position:relative; width:350px; padding-left:15px; margin:5px 0; font-size:14px;}
+.gray_border_box .arr_txt:after {content:'\f0da'; width:11px; height:11px; position:absolute; left:0; top:2px; display: inline-block; font-family: FontAwesome; font-style: normal; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color:#3886cc; font-size:11px}
+
+
+/* .guide {padding:50px 0px;} */
+.guide .intro {display:table; width:100%; table-layout:fixed;}
+.guide .intro > .text {display:table-cell; width:100%; vertical-align:top;}
+.guide .intro > .text > h4 {font-size:26px; color:#1a1a1a; margin-bottom:30px;}
+.guide .intro > .text > p {font-size:15px; color:#666; line-height:1.6; margin-bottom:20px;}
+.guide .intro > .text > a {display:inline-block; border:1px solid #9aafc0; background:#fefefe; height:48px; line-height:48px; color:#0871a6; font-size:15px; padding:0px 20px; text-decoration:none;}
+.guide .intro > .text > a > i {padding-right:16px; border-right:1px solid #c5d1db; margin-right:10px; font-size:20px; float:left;}
+.guide .intro > .text > .helpText {color:#667380; font-size:13px; height:16px; line-height:16px; margin-top:20px; position:relative; padding-left:24px;}
+.guide .intro > .text > .helpText > i {position:absolute; top:-1px; left:0; width:16px; height:16px; line-height:16px; border-radius:8px; background:#a6b8c7; color:#fff; font-size:12px; margin-right:10px; text-align:center;}
+.guide .intro > .image {display:table-cell; width:100%; padding-top:50px; vertical-align:top; text-align:right;}
+.guide .intro > .image > img {width:345px;}
+
+.guide .download {background:#f5f8fc; border:1px solid #dfe4eb; padding:20px; text-align:right; font-size:0px;}
+.guide .download > a.download {display:inline-block; border:1px solid #9aafc0; background:#fefefe; height:48px; line-height:48px; color:#0871a6; font-size:15px; padding:0px 20px; text-decoration:none; float:left;}
+.guide .download > a.download > i {padding-right:16px; border-right:1px solid #c5d1db; margin-right:10px; font-size:20px; float:left;}
+.guide .download > a.pdf {display:inline-block; height:36px; padding:0px 15px; background:#fff url(../images/guide/icon_pdf.png) no-repeat 15px 50%; padding-left:45px; border:1px solid #d6d6d6; font-size:13px; border-radius:18px; line-height:36px; text-decoration:none; color:#333; margin:5px 0px; margin-left:10px;}
+
+.guide ul.tab {border-bottom:1px solid #d6d6d6; height:49px; margin-top:30px; font-size:0px; list-style:none;}
+.guide ul.tab > li {display:inline-block; border:1px solid #d6d6d6; border-right:0px;}
+.guide ul.tab > li:last-child {border-right:1px solid #d6d6d6;}
+.guide ul.tab > li > button {height:48px; background:#ffffff; line-height:48px; padding:0px 20px; font-size:13px; color:#666; cursor:pointer; border:0px;}
+.guide ul.tab > li.selected {border-color:#294766;}
+.guide ul.tab > li.selected > button {color:#fff; background:#294766;}
+.guide ul.tab > li.selected + li {border-left:0px; padding-left:1px;}
+.guide ul.tab > li.float {float:right; border:0px;}
+
+.guide ul.tab > li > a {display:inline-block; height:36px; padding:0px 15px; background:#fff url(../images/guide/icon_pdf.png) no-repeat 15px 50%; padding-left:45px; border:1px solid #d6d6d6; float:right; font-size:13px; border-radius:18px; line-height:36px; text-decoration:none; color:#333; margin-top:5px;}
+
+.guide div.tabBox > div {display:none;}
+.guide div.tabBox > div:first-child {display:block;}
+.guide div.tabBox > div > h4 {font-size:26px; color:#0871a6; line-height:1.6; padding:30px 0px; text-align:center;}
+.guide div.tabBox > div > p {color:#666; line-height:1.6; padding:20px 0px; font-size:15px;}
+.guide div.tabBox > div > h4 + p {margin-top:-20px;}
+
+.guide div.tabBox .button {text-align:center;}
+.guide div.tabBox .button > a {display:inline-block; border:1px solid #0870a5; background:#0870a5; height:48px; line-height:48px; color:#fff; font-size:15px; padding:0px 20px; text-decoration:none;}
+.guide div.tabBox .button > a > i {padding-right:16px; border-right:1px solid #c5d1db; margin-right:10px; font-size:20px; float:left;}
+
+.guide .line {margin-top:30px; height:1px; background:#f0f0f0;}
+
+.guide .divide {display:table; width:100%; table-layout:fixed;}
+.guide .divide > div {display:table-cell; width:100%; vertical-align:top;}
+.guide .divide > div:first-child {padding-right:20px;}
+.guide .divide > div:last-child {padding-left:20px;}
+.guide .divide > div > img {width:100%; display:block;}
+main.subpage > div.container > div.context > section .guide .divide > div > h5 {padding:10px 0px; font-size:18px; color:#1a1a1a; padding-left:0; margin-bottom:0}
+main.subpage > div.container > div.context > section .guide .divide > div > h5:after {content:none}
+.guide .divide > div > p {color:#666; line-height:1.6; font-size:13px;}
+
+.guide .step {margin-right:-50px; font-size:0px; margin-bottom:30px;}
+.guide .step > div {width:33.333%; padding-right:50px; display:inline-block; box-sizing:border-box; background-image:url(../images/guide/arrow_right.png); background-repeat:no-repeat; background-position:calc(100% - 5px) calc(50% + 30px);}
+.guide .step > div:last-child {background:transparent !important;}
+main.subpage > div.container > div.context > section .guide .step > div > div > h5 {font-size:17px; color:#1a1a1a; height:60px; line-height:60px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; padding-left:0; margin-bottom:0}
+main.subpage > div.container > div.context > section .guide .step > div > div > h5:after {content:none}
+.guide .step > div > div > h5 > i {display:block; float:left; width:40px; height:40px; box-sizing:border-box; border:2px solid #0370a6; color:#0370a6; text-align:center; line-height:36px; margin-right:10px; border-radius:50%; font-style:normal; margin-top:10px;}
+.guide .step > div > div > img {width:100%;}
+
+.guide .manual {display:table; width:100%; table-layout:fixed; margin-top:30px;}
+.guide .manual > div.image {display:table-cell; width:40%; vertical-align:top; padding-right:40px;}
+.guide .manual > div.image > img {width:100%;}
+.guide .manual > div.text {width:60%; display:table-cell;}
+main.subpage > div.container > div.context > section .guide .manual > div.text > h6 {padding:10px 0px; font-size:18px; color:#1a1a1a; margin-bottom:10px; background:none}
+.guide .manual > div.text > p {color:#666; line-height:1.6; font-size:13px;}
+.guide .manual > div.text > p > b {font-weight:normal; color:#333; font-size:15px;}
+
+@media (max-width:767px) {
+	.guide {padding:20px 0px;}
+
+	.guide .intro {display:block;}
+	.guide .intro > .text {display:block; width:100%;}
+	.guide .intro > .text > a {display:none;}
+	.guide .intro > .text > .helpText {display:none;}
+	.guide .intro > .image {display:block; width:100%; padding-top:10px;}
+	.guide .intro > .image > img {width:100%; display:block;}
+
+	.guide ul.tab {display:table; width:100%; border-bottom:0px;}
+	.guide ul.tab > li {display:table-cell !important; text-align:center;}
+	.guide ul.tab > li > button {width:100%; text-align:center; padding:0px 10px;}
+	.guide ul.tab > li.float {display:none !important;}
+
+	.guide .divide {display:block;}
+	.guide .divide > div {display:block; width:100%; padding:0px !important; padding-top:20px !important;}
+
+	.guide .download > a {display:block !important; float:none !important; width:100% !important; box-sizing:border-box; margin:5px 0px !important; text-align:left;}
+	.guide .download > a.download {display:none !important;}
+
+	.guide .manual {display:block;}
+	.guide .manual > div.image {display:block; width:100%; padding:0px !important; padding-top:20px !important;}
+	.guide .manual > div.text {display:block; width:100%; padding:0px !important; padding-top:20px !important;}
+
+	.guide .step {display:block; margin-right:0px;}
+	.guide .step > div {display:block; width:100%; padding-right:0px; padding-bottom:40px; background-image:url(../images/guide/arrow_down.png); background-position:50% 100%;}
+
+	.guide div.tabBox .button {display:none;}
+}

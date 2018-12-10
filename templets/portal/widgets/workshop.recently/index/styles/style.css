@@ -1,0 +1,43 @@
+/**
+ * 이 파일은 서울대 연동모듈의 일부입니다. (https://www.imodule.kr)
+ *
+ * 서울대 포털 인덱스 위크숍 최근게시물 위젯
+ *
+ * @file /module/snu/templets/widgets/workshop.recently/styles/style.css
+ * @author wioz ()
+ * @license MIT License
+ * @version 3.0.0
+ * @modified 2018. 8. 19.
+ */
+div[data-widget=workshop-recently][data-templet=index] > ul {list-style:none;}
+div[data-widget=workshop-recently][data-templet=index] > ul > li {height:40px; border-bottom:1px solid #f3f3f3; padding:18px 5px 17px 5px;}
+div[data-widget=workshop-recently][data-templet=index] > ul > li > a {display:inline-block; max-width:100%; height:20px; line-height:20px; overflow:hidden; font-size:14px; color:#333; text-decoration:none; white-space:nowrap; text-overflow:ellipsis;}
+div[data-widget=workshop-recently][data-templet=index] > ul > li > a > i {display:inline-block; width:40px; height:20px; line-height:20px; color:#fff; text-align:center; border-radius:5px; font-size:11px; margin-right:7px; font-style:normal; background:#b8c2cc; float:left;}
+
+div[data-widget=workshop-recently][data-templet=index] > ul > li > a > i.approach {background:#f0c02f;}
+div[data-widget=workshop-recently][data-templet=index] > ul > li > a > i.open {background:#4cb87c;}
+
+div[data-widget=workshop-recently][data-templet=index] > ul > li > div.time {display:block; margin-top:5px; height:15px; line-height:15px; color:#808080; font-size:13px;}
+div[data-widget=workshop-recently][data-templet=index] > ul > li {}
+
+
+div[data-widget=workshop-recently][data-templet=index] {width:400px; float:left}
+div[data-widget=workshop-recently][data-templet=index] > div {display:none}
+div[data-widget=workshop-recently][data-templet=index] > div.on {display:block}
+div[data-widget=workshop-recently][data-templet=index] > div > div {display:table; width:100%; margin-bottom:15px}
+div[data-widget=workshop-recently][data-templet=index] > div > div > span {display:table-cell; width:42px; vertical-align:middle}
+div[data-widget=workshop-recently][data-templet=index] > div > div > span > i {display:inline-block; width:42px; height:42px; border:1px solid #fff; border-radius:50%; font-size:14px; line-height:42px; text-align:center; font-style:normal; color:#fff}
+div[data-widget=workshop-recently][data-templet=index] > div > div > span > i {color:rgba(255,255,255,.5); border-color:rgba(255,255,255,.5)}
+div[data-widget=workshop-recently][data-templet=index] > div > div > span > i.due {color:#54d2f8; border-color:#54d2f8}
+div[data-widget=workshop-recently][data-templet=index] > div > div > span > i.register {color:#ffc240; border-color:#ffc240}
+div[data-widget=workshop-recently][data-templet=index] > div > div > a {display:table-cell; padding-left:15px; color:#fff; vertical-align:middle}
+div[data-widget=workshop-recently][data-templet=index] > div > div > a > em {display:block; margin-bottom:5px; font-style:normal; font-size:14px}
+div[data-widget=workshop-recently][data-templet=index] > div > div > a > span {opacity:.6}
+div[data-widget=workshop-recently][data-templet=index] > div > div > a:hover {text-decoration:none}
+
+div[data-widget=workshop-recently][data-templet=index] strong {display:block; margin-bottom:25px; font-size:18px; color:#fff}
+div[data-widget=workshop-recently][data-templet=index] strong .program_tab {display:inline-block; float:right; margin-top:-3px; font-size:0}
+div[data-widget=workshop-recently][data-templet=index] strong .program_tab > li {display:inline-block; height:22px; margin-left:-1px; padding:0 10px; border:1px solid rgba(255,255,255,0.6); line-height:22px; font-size:13px; font-weight:normal; color:rgba(255,255,255,0.6); cursor:pointer}
+div[data-widget=workshop-recently][data-templet=index] strong .program_tab > li:first-child {border-top-left-radius:2px; border-bottom-left-radius:2px}
+div[data-widget=workshop-recently][data-templet=index] strong .program_tab > li:last-child {border-top-right-radius:2px; border-bottom-right-radius:2px}
+div[data-widget=workshop-recently][data-templet=index] strong .program_tab > li.selected {background:#fff; color:#222; border-color:#fff}
